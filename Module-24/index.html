@@ -11,22 +11,22 @@
           <h1>Now we Explore DOM</h1>
       </header>
 
-      <main>
+      <main id="main-container">
                <section>
-                <h1 id="person-title">My awesome DOM de baba </h1>
+                <h1 id="person-title" class=" My favourite teacher is Jamal " >My awesome DOM de baba </h1>
                <ul>
                 <li>Jalalyset</li>
                 <li>Shafayet</li>
-                <li>Bonobash</li>
+                <li class="importances-list">Bonobash</li>
                 <li>Kadir</li>
                 <li>Akash</li>
                </ul> 
                </section>
                 
-               <section>
-                <h1 class="fruit-title">My another new collection</h1>
+               <section class="fruit-collection">
+                <h1 id="fruit-title" class="some-class random-class another-class">My another new collection</h1>
                <ul>
-                <li>Apple</li>
+                <li class="importances-list">Apple</li>
                 <li>Banana</li>
                 <li>Corrat</li>
                 <li>WaterMelon</li>
@@ -35,19 +35,28 @@
                </section>
 
 
-               <section>
+               <section id="places-container">
                   
                     <h1 id="places-title"> which places i visited</h1>
-                    <ul>
+                    <ul id="places-list">
                    <li>Chondhonath hill</li>
                    <li>Golikhali sea beach</li>
                    <li>Khoiya hora jornna</li>
                    <li>Maya</li>
-                   <li>old Dhaka</li>
+                   <li class="importances-list">old Dhaka</li>
                    </ul>
                </section>
+
+               <div id="my-details">
+                   <!-- Get my details -->
+                   <h1>Name : Shajib Sarkar</h1>
+                   <p>Age : 22</p>
+               </div>
       </main>
 
       <script src="simple.js"></script>
+      <script src="append.js"></script>
+      <script src="styles.js"></script>
+      
 </body>
 </html>

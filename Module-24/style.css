@@ -1,3 +1,17 @@
 h1{
     color: blue;
 }
+
+.fruit-collection li{
+    color: tomato;
+  
+}
+
+.larges-text{
+    font-size:2rem;
+}
+
+.text-center{
+     text-align: center;
+}
+
