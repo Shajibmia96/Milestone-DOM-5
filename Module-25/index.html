@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM EVENTS</title>
+</head>
+<body>
+      <h1>This day special for me</h1>
+       <!-- Option --1 -->
+      <button onclick="console.log(7)">Hire Me</button>
+      <br><br><br>
+        <!-- Option --2-->
+      <button onclick="console.log(5)" title="This is tooltip">Click me</button>
+      <br><br><br>
+        <!-- Option --3 -->
+      <button onclick="console.log('I love you')">See more</button>
+       <br><br><br>
+         <!-- Option --4-->
+      <button onclick="document.body.style.backgroundColor = 'Yellow'"> Make me Yellow</button>
+      <br><br><br>
+        <!-- Option --5 -->
+       <button onclick="makeMeRed()">Make me Red</button>
+       <br>
+       <br> <br>
+         <!-- Option --6 -->
+       <button id="makeMeBlue">Make me Blue</button>
+       <br><br>
+         <!-- Option --7 -->
+       <button id="makeMePurple">Make me Blue</button>
+       <button id="count">Count</button>
+
+
+    <script src="js/event.js"></script>
+
+    <script>
+         function makeMeRed(){
+             document.body.style.backgroundColor ="red";
+         }
+    </script>
+</body>
+</html>

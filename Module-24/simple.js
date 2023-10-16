@@ -45,4 +45,4 @@ const fruitCollection = document.querySelectorAll('.fruit-collection li')
   const div = document.getElementById('my-details')
   const text = div.innerHTML;
 //   console.log(text);
-
+document.get
