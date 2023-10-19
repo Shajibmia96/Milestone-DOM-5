@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Handler</title>
+</head>
+<body>
+       <h1>Now We know how to handel a EventLister</h1>
+
+         <p id="update-text">Update your name</p>
+         <input id="input-text" type="text">
+          <button id="update-btn">Update</button>
+
+          
+       <h1 id="this-handler">My Name is Shajib .And didn't go Sylhet</h1>
+       <button onclick="clickMe()">Thouth a question</button>
+       <br><br>
+       <button id="handle-it-with">Change your option</button>
+       <!-- .......................................... -->
+       <h1 id="input-text1">Enter your FullName</h1>
+       <input id=" input-update" type="text">
+       <br><br>
+       <button id="btn-update">clickMe</button>
+</body>
+<script>
+       document.getElementById("btn-update").addEventListener('click',function(){
+         const inputUpdate = document.getElementById(" input-update");
+         const inputText = inputUpdate.value;
+       const p=  document.getElementById("input-text1");
+        p.innerText=inputText;
+        inputUpdate.value ='';
+       })
+
+      //  c..............................................
+       document.getElementById("update-btn").addEventListener('click',function(){
+          const updateBTN = document.getElementById("input-text");
+          const inputText = updateBTN.value;
+          const updateText = document.getElementById("update-text");
+          updateText.innerText = inputText;
+          updateBTN.value = '';
+         
+
+       })
+       function clickMe(){
+          const handler1 = document.getElementById("this-handler");
+          handler1.innerText = "What is your name? Did you go sylhet?"
+       }
+
+       document.getElementById("handle-it-with").addEventListener('click',function(){
+          const handler1 = document.getElementById("this-handler");
+          handler1.innerText = "Please your your some more information";
+       })
+</script>
+</html>

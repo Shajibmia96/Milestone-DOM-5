@@ -30,13 +30,26 @@
        <button id="makeMePurple">Make me Blue</button>
        <button id="count">Count</button>
 
+        <!-- Option --8 -->
+       <button id="make-pink">make Me Pink</button>
+       <br><br>
+       <button id="make-Green">make Me Green</button>
+
 
     <script src="js/event.js"></script>
 
     <script>
-         function makeMeRed(){
-             document.body.style.backgroundColor ="red";
-         }
+    //    const MakePink=   document.getElementById("make-pink")
+    //    MakePink.addEventListener('click', MakesPink);
+
+    //    function MakesPink(){
+    //       document.body.style.backgroundColor= "pink"
+    //    }
+
+    const pinkButton =document.getElementById("make-pink")
+    pinkButton.addEventListener('click' ,function(){
+        document.body.style.backgroundColor = "Pink"
+    })
     </script>
 </body>
 </html>

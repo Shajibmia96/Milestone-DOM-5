@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Added a comment section</title>
+</head>
+<body>
+
+    <!-- <h1 id="updateText">Enter your comment here</h1>
+    <input type="text" name="" id="input-field">
+    <br><br>
+    <button id="input-btn">Update here</button> -->
+
+
+   <div class="comment-containers">
+    <h1>Now we know about Leo Messi</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati numquam error libero culpa dicta tempore soluta ipsam suscipit ipsum fuga quidem voluptas, aliquam harum quo. A animi eos voluptatibus odit sapiente excepturi nam ipsam assumenda doloremque, magni error hic? Reiciendis corporis a amet cum consequatur, fugiat nam repellendus ipsa perspiciatis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus earum deleniti praesentium et eligendi magni non optio ipsa! Voluptate ipsa maiores iste molestiae sit quidem consectetur, veritatis autem, molestias pariatur ex ducimus. In eos enim quaerat nobis odio suscipit necessitatibus modi, similique aperiam ut quo totam repellat ab ea pariatur optio impedit, libero maiores ipsam? Ullam, possimus. Ex, eos reprehenderit?</p>
+
+    <p id="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, eaque voluptatem! Numquam, mollitia ullam ex placeat iure nostrum porro. Numquam dolores quis eveniet aliquid odio quae omnis distinctio ipsam id ullam accusantium quo architecto neque nihil adipisci rerum, voluptatum provident.</p>
+   </div>
+
+    <textarea name="" id="new-text-area" cols="80" rows="5"></textarea>
+    <br>
+    <button id="post-btn">Post</button>
+    
+      
+    <script>
+
+        document.getElementById("post-btn").addEventListener('click',function(){
+            const commentText = document.getElementById("new-text-area");
+            const commentbox = commentText.value;
+            const addNewComment = document.getElementById("comment-containers");
+            const newPapragrap = document.createElement('p');
+            newPapragrap.innerText = commentbox;
+
+    
+
+
+
+            addNewComment.appendChild(newPapragrap);
+            
+            
+            
+          
+        })
+        //  document.getElementById("input-btn").addEventListener('click',function(){
+        //     const updateField = document.getElementById("input-field");
+        //     const inputText = updateField.value;
+        //     const updateText =document.getElementById("updateText");
+        //     updateText.innerText = inputText;
+        //     updateField.value = '';
+        //  })
+    </script>
+    
+</body>
+</html>
