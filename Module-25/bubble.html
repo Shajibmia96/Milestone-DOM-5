@@ -16,8 +16,13 @@
     </ul>
     <button id="add-new-btn">Add more</button>
 
+    <input id="user-data" type="text">
 
     <script>
+
+        document.getElementById("user-data").addEventListener('keyup',function(even){
+            console.log(even.target.value)
+        })
         //  const items = document.getElementsByClassName('item');
         //  for ( const item of items){
         //     item.addEventListener('click', function(even){
