@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Bubble</title>
+</head>
+<body>
+    <h1>Now We explore our Bubble Bhai</h1>
+    <ul id="list-items">
+        <li class="item">Shajib</li>
+        <li class="item">Akash</li>
+        <li class="item">Sayem</li>
+        <li class="item">Tipu</li>
+        <li class="item">arman</li>
+    </ul>
+    <button id="add-new-btn">Add more</button>
+
+
+    <script>
+        //  const items = document.getElementsByClassName('item');
+        //  for ( const item of items){
+        //     item.addEventListener('click', function(even){
+
+        //        even.target.parentNode.removeChild(even.target)
+        
+        //     })
+            
+        //  }
+
+        document.getElementById("list-items").addEventListener('click', function(even){
+           even.target.parentNode.removeChild(even.target)
+        })
+
+        document.getElementById("add-new-btn").addEventListener('click',function(){
+            const addItems = document.getElementById('list-items')
+            const li = document.createElement('li');
+            li.innerText ="Sadekur";
+            li.classList.add('item')
+            addItems.appendChild(li);
+        })
+         
+    </script>
+</body>
+</html>
