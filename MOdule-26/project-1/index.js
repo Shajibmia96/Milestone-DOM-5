@@ -10,9 +10,14 @@ document.getElementById("submit-btn").addEventListener("click" , function(){
      const userPass = document.getElementById("user-pass");
      const password = userPass.value
      console.log(email ,password);
+     
      if(email === 'sayed@gmail.com' && password == "iloveyou"){
-        console.log('valid Email , pass')
+        // console.log('valid Email , pass')
+        window.location.href = 'bank.html'
      }else{
-        console.log('please input a valid Email ,pass')
+        alert("Incorrect password")
      }
 })
+
+//...................................................................
+
