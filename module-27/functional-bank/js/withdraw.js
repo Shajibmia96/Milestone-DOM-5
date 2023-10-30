@@ -40,3 +40,20 @@
  
 
 // functional section
+
+document.getElementById("withdraw-button").addEventListener('click' , function(){
+    //  find out withdraw
+    const getWithdrawFieldElement = getInputValueById('withdrawField');
+    // console.log(getWithdrawFieldElement)
+
+    const getTotalElement = getDepositValueById("total-withdraw");
+    // console.log(getTotalElement)
+    const getNewTotal = getWithdrawFieldElement + getTotalElement;
+    setElementValueById('total-withdraw',getNewTotal);
+    const getPreviousTotal = getDepositValueById('total-balance');
+
+    const getCurrentValue = getPreviousTotal - getWithdrawFieldElement;
+    setElementValueById('total-balance' , getCurrentValue);
+    
+
+})
