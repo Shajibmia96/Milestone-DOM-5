@@ -5,6 +5,10 @@ document.getElementById("deposit").addEventListener('click' , function(){
     // console.log(depoValue)
     // console.log(typeof depoValue)
     depoField.value = '';
+    if(isNaN(newDepoValue)){
+      alert("please input a valid number")
+      return;
+ }
 
     // add depo
 
@@ -30,13 +34,24 @@ document.getElementById("withdraw").addEventListener('click' ,function(){
    const withdrawValue = parseFloat(withdrawField.value)
 //    console.log(withdrawValue)
     withdrawField.value = '';
+    if(isNaN(withdrawValue)){
+         alert("please input a valid number")
+         return;
+    }
     
+     
+
+      const balTotalElement = document.getElementById('balance-total');
+      const balTotal = parseFloat(balTotalElement.innerText)
+
+      if(withdrawValue > balTotal){
+        alert("Balance not pound ")
+        return
+      }
       const withdrawTotalElement = document.getElementById('withdraw-total');
       const withdrawTotal = parseFloat(withdrawTotalElement.innerText)
     //   console.log(withdrawTotal)
       withdrawTotalElement.innerText = withdrawTotal +withdrawValue;
 
-      const balTotalElement = document.getElementById('balance-total');
-      const balTotal = parseFloat(balTotalElement.innerText)
-      balTotalElement.innerText = balTotal - withdrawValue
+      balTotalElement.innerText = balTotal - withdrawValue;
 })
