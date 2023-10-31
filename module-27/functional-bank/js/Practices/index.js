@@ -20,4 +20,5 @@ document.getElementById("Apply-btn").addEventListener('click' , function(){
     const priceWithDiscount = previousPriceElement-discountPrice
     // console.log(priceWithDiscount)
     const amountWithDiscount =setDiscountTextElement('discountAmount' , priceWithDiscount)
+    
 })
